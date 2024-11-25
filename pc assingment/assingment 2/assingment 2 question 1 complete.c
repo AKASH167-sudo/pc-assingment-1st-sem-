@@ -36,7 +36,7 @@ int maxelement(int* arr, int size)
 
 
 
-int Mean(int* arr, int size)
+double Mean(int* arr, int size)
 {
     double counter = 0.000000;
 
@@ -64,7 +64,7 @@ double variance(int *arr,int size)
         mean=mean/size;
         meanofsquares=meanofsquares/size;
 
-    return meanofsquares -pow(mean,2);
+    return meanofsquares -mean*mean;
 }
 
 int sumofsquares(int *arr,int size)
